@@ -1585,6 +1585,33 @@
 
 
 
+
+  /* COMPETITION CLOSED BANNER */
+  .closed-banner {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    color: var(--navy-deep);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid var(--navy);
+  }
+  .closed-banner-title {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+  }
+  .closed-banner-text {
+    font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+    font-weight: 500;
+    color: var(--navy);
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .closed-banner { padding: 2rem 1.25rem; }
+  }
 </style>
 </head>
 <body>
@@ -1607,6 +1634,12 @@
   <a href="#" class="nav-link nav-active" data-page="page-contest">Essay Contest</a>
   <a href="#" class="nav-link" data-page="page-about">About CLS</a>
   <a href="https://www.dukeunccls.com/" target="_blank">CLS Official Website</a>
+</div>
+
+<!-- ===== COMPETITION CLOSED BANNER ===== -->
+<div class="closed-banner" role="status">
+  <h2 class="closed-banner-title">Competition Now Closed</h2>
+  <p class="closed-banner-text">Results of the winner will be announced by early January.</p>
 </div>
 
 <!-- ===== CONTEST PAGE ===== -->
